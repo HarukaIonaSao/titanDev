@@ -92,92 +92,98 @@ const titans = [
     },
   ];
   
-  const cardsTitanDiv = document.querySelector(".cards-titan");
-  const listaTitans = document.getElementById("lista-titans");
-  
-  function criarCardTitan(titan) {
+const cardsTitanDiv = document.querySelector(".cards-titan");
+const listaTitans = document.getElementById("lista-titans");
+
+// Função para criar um cartão de um titã.
+function criarCardTitan(titan) {
     const cardDiv = document.createElement("div");
-    // Usando suas variáveis CSS agora:
-    cardDiv.style.backgroundColor = "var(--bg-card)"; // Cor de fundo do card
+    // Definindo a cor do fundo do cartão.
+    cardDiv.style.backgroundColor = "var(--bg-card)"; 
+    // Adicionando classes para estilizar o cartão com base na nacionalidade.
     cardDiv.classList.add("card-titan", titan.nacionalidade.toLowerCase() === 'eldia' ? 'eldia' : 'marley');
+    // Definindo um id único para cada cartão baseado no nome do titã.
     cardDiv.setAttribute("id", `card-${titan.nome.toLowerCase().replace(/\s/g, '')}`);
-  
+
+    // Cria o card no html
     cardDiv.innerHTML = `
       <div class="card-topo">
-     
         <div class="detalhes">
-          <h2 class="nome">${titan.nome}</h2>
-          <span>#${titan.id.toString().padStart(3, '0')}</span> 
+          <h2 class="nome">${titan.nome}</h2> <!-- Nome do titã -->
+          <span>#${titan.id.toString().padStart(3, '0')}</span> <!-- ID do titã -->
         </div>
-        <span class="tipo">${titan.nacionalidade}</span> 
+        <span class="tipo">${titan.nacionalidade}</span> <!-- Nacionalidade do titã -->
         <div class="card-imagem">
-          <img src="${titan.imagem}" alt="${titan.nome}" />
+          <img src="${titan.imagem}" alt="${titan.nome}" /> <!-- Imagem do titã -->
         </div>
       </div>
       <div class="card-informacoes descricao">
         <div class="descricao">
-          <h3>Habilidades</h3>
-          <p>Portador(es): ${titan.portador}</p>
-          <p>${titan.habilidades}</p>
+          <h3>Habilidades</h3> <!-- Cabeçalho das habilidades -->
+          <p>Portador(es): ${titan.portador}</p> <!-- Quem é o portador do titã -->
+          <p>${titan.habilidades}</p> <!-- Habilidades do titã -->
         </div>
         <div class="saiba-mais"> 
           <a href="${titan.linkVideo}" target="_blank">Saiba Mais</a> 
         </div>
       </div>
     `;
-    return cardDiv;
-  }
+    return cardDiv; // Retornamos o cartão criado.
+}
   
  
-  function criarItemLista(titan) {
+ // Criar um item da lista de titãs.
+function criarItemLista(titan) {
+    // Novo item da lista.
     const li = document.createElement("li");
-    li.classList.add("titan");
-    li.setAttribute("id", titan.nome.toLowerCase().replace(/\s/g, ''));
+    li.classList.add("titan"); 
+    li.setAttribute("id", titan.nome.toLowerCase().replace(/\s/g, '')); //id único.
+
+    // Colocamos a imagem e o nome do titã na lista.
     li.innerHTML = `
       <img src="${titan.imagem}" alt="${titan.nome}" />
       <span>${titan.nome}</span>
     `;
-  
-    // Adiciona os eventos de mouseover e mouseout
+
     li.addEventListener('mouseover', () => {
-      const cardId = `card-${titan.nome.toLowerCase().replace(/\s/g, '')}`;
-      mostrarCard(cardId,titan.imagem); 
+        const cardId = `card-${titan.nome.toLowerCase().replace(/\s/g, '')}`; // Id do cartão correspondente.
+        mostrarCard(cardId,titan.imagem); // Mostramos o cartão.
     });
-  
+
     li.addEventListener('mouseout', () => {
-      // Volta para o card ativo (se houver)
-      const cardAtivo = document.querySelector('.card-titan.active');
-      if (cardAtivo) {
-        mostrarCard(cardAtivo.id);
-      }
+        const cardAtivo = document.querySelector('.card-titan.active');
+        if (cardAtivo) {
+            mostrarCard(cardAtivo.id); // Mostra o cartão ativo.
+        }
     });
+
+    return li; 
+}
   
-    return li;
-  }
-  
-  // Função para mostrar o card correspondente
-  function mostrarCard(cardId) {
-    // Remove a classe 'active' de todos os cards
+  // Função para mostrar o cartão correspondente.
+function mostrarCard(cardId) {
+    // Remove a classe 'active' de todos os cartões para que eles não pareçam selecionados.
     const cards = document.querySelectorAll('.card-titan');
     cards.forEach(card => card.classList.remove('active'));
-  
-    // Adiciona a classe 'active' ao card correspondente
+
+    // Adiciona a classe 'active' ao cartão que queremos mostrar.
     const card = document.getElementById(cardId);
     if (card) {
-      card.classList.add('active');
+        card.classList.add('active'); // Torna o cartão ativo.
     }
-  }
-  
-  titans.forEach(titan => {
-    const cardTitan = criarCardTitan(titan);
-    cardsTitanDiv.appendChild(cardTitan);
-  
-    const itemLista = criarItemLista(titan);
-    listaTitans.appendChild(itemLista);
-  });
-  
-  // Lógica para tornar os cards interativos (igual ao código anterior)
-  
-  // Inicializa o primeiro card como ativo
-  document.getElementById("card-titãdeataque").classList.add("active");
-  document.getElementById("titãdeataque").classList.add("active");
+}
+
+ // Para cada titã que temos na lista, vamos criar seu cartão e seu item na lista.
+titans.forEach(titan => {
+    const cardTitan = criarCardTitan(titan); // Criamos o cartão do titã.
+    cardsTitanDiv.appendChild(cardTitan); // Colocamos o cartão na nossa página.
+
+    const itemLista = criarItemLista(titan); // Criamos o item da lista do titã.
+    listaTitans.appendChild(itemLista); // Colocamos o item na lista.
+});
+
+// Inicializa o primeiro cartão como ativo para que seja mostrado assim que a página carrega.
+document.getElementById("card-titãdeataque").classList.add("active");
+document.getElementById("titãdeataque").classList.add("active");
+ 
+ 

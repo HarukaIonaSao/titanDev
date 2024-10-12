@@ -1,160 +1,149 @@
-/* Div dos cards */
-.titans { /* Alterado de .pokedevs */
-    display: flex;
-    gap: 30px;   
-    padding: 30px 0;
-    z-index: 1; /* Para garantir que fique acima do fundo com blur */
-  }
-  
-  /* Cards individuais */
-  .card-titan { /* Alterado de .card-pokedev */
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Sombra mais visível */
-    display: none;   
-    max-width: 300px; /* Defina uma largura fixa */
-    min-height: 500px;
-    flex-direction: column; /* Organizar conteúdo verticalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
-    padding: 20px; 
-
-    color: var(--cor-font); /* Usando a variável de cor da fonte */
-  }
-  
-  /* Deixa somente um card visivel */
-  .card-titan.active { /* Alterado de .card-pokedev.active */
-    display: block;
-  }
-  
-  .card-titan img { /* Alterado de .card-pokedev img */
-    width: 200px; 
-
-    height: 200px; 
-    margin-top: 10px;
-    border-radius: 8px;
-    
-  }
-  
-  .card-titan .card-topo { /* Alterado de .card-pokedev .card-topo */
-    padding: 20px 40px 0;
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    align-items: center;   
-  }
-  
-  .card-titan .nome { /* Alterado de .card-pokedev .nome */
-    margin-bottom: 5px;
-    font-size: 0.9em;
-    margin-right: 80px; 
-    white-space: nowrap;        
-  }
-  
-  .card-titan .tipo { /* Alterado de .card-pokedev .tipo */
-    background-color: var(--bg-input); /* Usando a variável de cor de fundo */
-    border-radius: 10px;
-    font-size: 20px;
-    opacity: 0.7;
-    padding: 2px 10px;    
-  }
-  
-  .card-titan .detalhes { /* Alterado de .card-pokedev .detalhes */
-    align-items: center;
-    color: var(--cor-font); /* Usando a variável de cor da fonte */
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .card-titan .card-informacoes { /* Alterado de .card-pokedev .card-informacoes */
-    background-color: var(--cor-bgcard); /* Usando a variável de cor de fundo */
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    display: flex;
-    flex-direction: column; 
-    
-    justify-content: space-between;
-    margin-top: -60px;
-    margin-left: -20px;
-    margin-bottom: -30px;
-   
-    padding: 80px 20px 50px;
-    height: 300px;   
-    width: 300px;
-  }
-  
-  .card-titan .card-informacoes h3 { /* Alterado de .card-pokedev .card-informacoes h3 */
-    color: var(--cor-font); /* Usando a variável de cor da fonte */
-    border-bottom: 1px solid var(--border); /* Usando a variável de cor da borda */
-    font-size: 15px;
-    margin-bottom: 15px;
-  }
-
- 
-  .saiba-mais {
-    margin-bottom: -20px;
-    text-align: center; /* Centraliza o botão horizontalmente */
+.titans {
+  display: flex;
+  gap: 30px;   
+  padding: 30px 0;
+  z-index: 1;
 }
-  
-  /* Descrição com barra de rolagem se exceder 150px */
-  .card-titan .card-informacoes .descricao { /* Alterado de .card-pokedev .card-informacoes .descricao */
-    font-size: 18px;
-    max-height: 150px;
-    overflow-y: scroll;
-    padding:  0 10px;
-    
-  }
-  
-  /* Menu lateral */
-  .titan img { 
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    border-radius: 20px;
-  }
-  
-  /* Classes de Tipo (ajuste conforme necessário) */
-   .list {
-    max-width: 200px;
-  }
-  
-  .list .titan img { /* Alterado de .list .pokedev img */
-    width: 25%;
-  }
-  
-  .list .titan { /* Alterado de .list .pokedev */
-    align-items: center;
-    background-color: var(--cor-btn); /* Usando a variável de cor de fundo */
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    color: var(--cor-font); /* Usando a variável de cor da fonte */
-    cursor: pointer;
-    display: flex;
-    font-size: 13px;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    min-height: 50px;
-    padding: 0 5px;
-    transition: 0.20 ease-in-out;
-  }
-      
-  .list .titan:hover { /* Alterado de .list .pokedev:hover */
-    background-color: var(--cor-btn-hover); /* Usando a variável de cor de fundo */
-    transform: scale(1.05);
-  }
-  
-  .list .titan span { /* Alterado de .list .pokedev span */
-    padding-right: 20px;
-  }
-  
-  /* Link Saiba Mais */
-  .saiba-mais a { 
-    background-color: var(--cor-btn); 
-    color: var(--cor-font);
-    padding: 10px 20px; 
-    border-radius: 5px; 
-    text-decoration: none; 
-  }
-  
-  .saiba-mais a:hover {
-    background-color: var(--cor-btn-hover); 
-  }
+
+/* Div dos cards */
+.card-titan {
+  align-items: center;
+  color: var(--cor-font);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #00000080;
+  display: none;   
+  flex-direction: column;
+  justify-content: center;
+  max-width: 300px;
+  min-height: 500px;
+  padding: 20px; 
+}
+
+/* Cards individuais */
+.card-titan.active {
+  display: block; 
+}
+
+.card-titan img {
+  border-radius: 8px;
+  height: 200px; 
+  margin-top: 10px;
+  width: 200px; 
+}
+
+.card-titan .card-topo {
+  align-items: center;   
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 40px 0;
+}
+
+.card-titan .detalhes {
+  align-items: center;
+  color: var(--cor-font);
+  display: flex;
+  flex-direction: row;
+}
+
+.card-titan .nome {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  margin-right: 80px; 
+  white-space: nowrap;        
+}
+
+.card-titan .tipo {
+  background-color: var(--bg-input);
+  border-radius: 10px;
+  font-size: 20px;
+  opacity: 0.7;
+  padding: 2px 10px;    
+}
+
+.card-titan .card-informacoes {
+  background-color: var(--cor-bgcard);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  flex-direction: column; 
+  height: 300px;   
+  justify-content: space-between;
+  margin-bottom: -30px;
+  margin-left: -20px;
+  margin-top: -60px;
+  padding: 80px 20px 50px;
+  width: 300px;
+}
+
+.card-titan .card-informacoes h3 {
+  border-bottom: 1px solid var(--border);
+  color: var(--cor-font);
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.card-titan .card-informacoes .descricao {
+  font-size: 18px;
+  max-height: 150px;
+  overflow-y: scroll;
+  padding: 0 10px;  
+}
+
+.titan img { 
+  border-radius: 20px;
+  height: 50px;
+  margin-right: 10px;
+  width: 50px;
+}
+
+/* Menu */
+.list {
+  max-width: 200px;
+}
+
+.list .titan img {
+  width: 25%;
+}
+
+.list .titan {
+  align-items: center;
+  background-color: var(--cor-btn);
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  color: var(--cor-font);
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  min-height: 50px;
+  padding: 0 5px;
+  transition: 0.20 ease-in-out;
+}
+
+.list .titan:hover {
+  background-color: var(--cor-btn-hover);
+  transform: scale(1.05);
+}
+
+.list .titan span {
+  padding-right: 20px;
+}
+
+.saiba-mais {
+  margin-bottom: -20px;
+  text-align: center; 
+}
+
+.saiba-mais a { 
+  background-color: var(--cor-btn); 
+  border-radius: 5px; 
+  color: var(--cor-font);
+  padding: 10px 20px; 
+  text-decoration: none; 
+}
+
+.saiba-mais a:hover {
+  background-color: var(--cor-btn-hover); 
+}
