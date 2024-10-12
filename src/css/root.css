@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
 :root {
-    --bg-card:#a35719bf;
+    --bg-card:#602f079a;
     --bg-footer:#79573cbb;
-    --bg-input:#4e311caa;  
+    --bg-input:#e66407aa;  
     --border:#6c5858; 
-    --btn-fire:#281001e7;
+    --btn-fire:#d5621ae7;
     --cor-bg: #6c5858;
-    --cor-btn: #6c5858;
+    --cor-btn: #441d11a9;
     --cor-btn-hover:#683816d5;
-    --cor-bgcard: #2d0f039d;
+    --cor-bgcard: #4b1a079d;
     --cor-font: #f1e6e6;
     --font-base: 'VT323', sans-serif;
     /* Cores de Listagem */
