@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+:root {
+    --bg-card:#a35719bf;
+    --bg-footer:#79573cbb;
+    --bg-input:#4e311caa;  
+    --border:#6c5858; 
+    --btn-fire:#281001e7;
+    --cor-bg: #6c5858;
+    --cor-btn: #6c5858;
+    --cor-btn-hover:#683816d5;
+    --cor-bgcard: #2d0f039d;
+    --cor-font: #f1e6e6;
+    --font-base: 'VT323', sans-serif;
+    /* Cores de Listagem */
+    --list-bg: #555e68;
+    --list-text-color: #f1e2e2;
+  
+    /* Outros */
+    --hover-transform-scale: 1.05;
+
+    /* Scrollbar */
+    --scrollbar-width: 15px;
+    --scrollbar-thumb-color: #787d88;
+    --scrollbar-track-color: #b1b0a8;
+    --scrollbar-thumb-border: 3px solid #836b42;
+    --scrollbar-thumb-border-radius: 20px;
+  }
