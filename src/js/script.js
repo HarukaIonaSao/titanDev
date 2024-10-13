@@ -72,7 +72,7 @@ const titans = [
     {
       id: 8,
       nome: "Titã Carroceiro",
-      imagem: "src/images/Carroceiro.png",
+      imagem: "src/images/carroceiro.png",
       portador: "Pieck Finger",
       habilidades:
         "Conhecido também por titã quadrúpede.Grande resistência que o permite permanecer transformado por longos períodos de tempo",
