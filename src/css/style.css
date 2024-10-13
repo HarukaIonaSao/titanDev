@@ -1,9 +1,10 @@
 body{
-    background-image:url(/src/images/bg4.webp);
+    background-image:url(/src/images/bg1.png);
     background-size:cover;
     color: var(--font-color);
     font-family: var(--font-base);
 }
+
 body::before {
     backdrop-filter: blur(8px);
     content: "";

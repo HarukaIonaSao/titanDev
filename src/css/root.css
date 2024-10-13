@@ -1,28 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 :root {
-    --bg-card:#602f079a;
-    --bg-footer:#79573cbb;
-    --bg-input:#e66407aa;  
-    --border:#6c5858; 
-    --btn-fire:#d5621ae7;
-    --cor-bg: #6c5858;
-    --cor-btn: #441d11a9;
-    --cor-btn-hover:#683816d5;
-    --cor-bgcard: #4b1a079d;
-    --cor-font: #f1e6e6;
-    --font-base: 'VT323', sans-serif;
-    /* Cores de Listagem */
-    --list-bg: #555e68;
-    --list-text-color: #f1e2e2;
-  
-    /* Outros */
+    /* Fonte Base */
+    --font-base: 'Lato', sans-serif;
+
+    /* Cores Inspiradas no Vermelho das Rosas */
+    --cor-btn: #115d6398; /* Rodapé com vermelho mais suave */
+    --btn-fire: #d5621ae7; /* Botão vermelho destacado */
+    --cor-bgcard: #1d9b7549; /* Fundo destacado verde para elementos */
+    --cor-btn-hover: #33917ff8; /* Hover do botão em verde */
+
+        
+    /* Cores Gerais e Outros Elementos */
+    --bg-input: #872f2dee;
+    --border: #138e1b;
+    --cor-font: #f7f3f3;
+   
+    /* Transformação de Hover */
     --hover-transform-scale: 1.05;
 
     /* Scrollbar */
     --scrollbar-width: 15px;
-    --scrollbar-thumb-color: #787d88;
-    --scrollbar-track-color: #b1b0a8;
-    --scrollbar-thumb-border: 3px solid #836b42;
+    --scrollbar-thumb-color: #0cd5eb;
+    --scrollbar-track-color: #1cb39d78;
+    --scrollbar-thumb-border: 3px solid #074a08;
     --scrollbar-thumb-border-radius: 20px;
-  }
+}

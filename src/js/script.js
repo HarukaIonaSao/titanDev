@@ -114,7 +114,7 @@ const titans = [
       <div class="card-informacoes descricao">
         <div class="descricao">
           <h3>Habilidades</h3>
-          <p>Portador(es): ${titan.portador}</p>
+          <p><em>Portador(es):</em><strong> ${titan.portador}</strong></p>
           <p>${titan.habilidades}</p>
         </div>
         <div class="saiba-mais"> 
