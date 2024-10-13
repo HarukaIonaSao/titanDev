@@ -4,11 +4,10 @@
     /* Fonte Base */
     --font-base: 'Lato', sans-serif;
 
-    /* Cores Inspiradas no Vermelho das Rosas */
-    --cor-btn: #115d6398; /* Rodapé com vermelho mais suave */
-    --btn-fire: #d5621ae7; /* Botão vermelho destacado */
-    --cor-bgcard: #1d9b7549; /* Fundo destacado verde para elementos */
-    --cor-btn-hover: #011216e7; /* Hover do botão em verde */
+    --cor-btn: #115d6398; 
+    --btn-fire: #d5621ae7; 
+    --cor-bgcard: #1d9b7549; 
+    --cor-btn-hover: #011216e7; 
 
         
     /* Cores Gerais e Outros Elementos */
