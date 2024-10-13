@@ -8,12 +8,12 @@
     --cor-btn: #115d6398; /* Rodapé com vermelho mais suave */
     --btn-fire: #d5621ae7; /* Botão vermelho destacado */
     --cor-bgcard: #1d9b7549; /* Fundo destacado verde para elementos */
-    --cor-btn-hover: #33917ff8; /* Hover do botão em verde */
+    --cor-btn-hover: #011216e7; /* Hover do botão em verde */
 
         
     /* Cores Gerais e Outros Elementos */
-    --bg-input: #872f2dee;
-    --border: #138e1b;
+    --bg-input: #1b1919ee;
+    --border: #3ff1c74a;
     --cor-font: #f7f3f3;
    
     /* Transformação de Hover */
@@ -21,8 +21,8 @@
 
     /* Scrollbar */
     --scrollbar-width: 15px;
-    --scrollbar-thumb-color: #0cd5eb;
-    --scrollbar-track-color: #1cb39d78;
+    --scrollbar-thumb-color: #1b95a3;
+    --scrollbar-track-color: #8caca8;
     --scrollbar-thumb-border: 3px solid #074a08;
     --scrollbar-thumb-border-radius: 20px;
 }
