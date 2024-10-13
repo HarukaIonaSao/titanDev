@@ -23,4 +23,15 @@ main{
     min-height: 100vh;
 }
 
+@media (min-width: 1200px) {
+    body {
+        background-size: contain; /* Mantém a proporção da imagem dentro da área */
+    }
+}
+
+@media (max-width: 750px) {
+    body {
+        background-size: cover;
+    }
+}
 
