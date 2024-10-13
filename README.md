@@ -53,6 +53,8 @@ titas-primordiais/
 │
 └── index.html
 
+
+
 🛠️ **Tecnologias Utilizadas**
 * HTML5: Estrutura básica da aplicação.
 * CSS3: Estilo e layout.
