@@ -1,7 +1,7 @@
 # 🌌 Titãs Primordiais 🌌
 
 Bem-vindo ao projeto **Titãs Primordiais**, uma aplicação interativa que apresenta os nove titãs do universo de *Attack on Titan* (Shingeki no Kyojin). Aqui você pode explorar as habilidades, portadores e muito mais sobre cada titã! 💪
-'Projeto realizado na semana dev do Dev em dobro em 2024'
+Projeto realizado na semana dev do Dev em dobro em 2024
 
 ## 📦 Recursos do Projeto
 
