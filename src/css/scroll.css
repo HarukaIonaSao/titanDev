@@ -1,11 +1,42 @@
-/* Firefox */
+/* Cursor padrão em todo o site */
 * {
-    cursor: pointer;
+    cursor: default; /* Cursor padrão */
     scrollbar-width: thin; 
     scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color); 
 }
 
-/* Chrome, Edge, and Safari */
+/* Cursor pointer para elementos clicáveis */
+button, a, .titan, .saiba-mais a {
+    cursor: pointer; /* Indica que o item é clicável */
+}
+
+/* Cursor de carregamento em caso de alguma ação em andamento */
+.loading {
+    cursor: wait; /* Mostra o cursor de 'aguarde' */
+}
+
+/* Ajuste de cursor para textarea ou input */
+input, textarea {
+    cursor: text; /* Cursor de texto para campos de entrada */
+}
+
+/* Cursor de redimensionamento */
+.resizable {
+    cursor: nwse-resize; /* Indica que o elemento pode ser redimensionado */
+}
+
+/* Estilização do cursor em cards ou itens que necessitam de foco */
+.card-titan.active {
+    cursor: pointer; /* Mostra que o card pode ser clicado quando ativo */
+}
+
+/* Firefox scrollbar settings */
+* {
+    scrollbar-width: thin; 
+    scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color); 
+}
+
+/* Chrome, Edge, and Safari scrollbar settings */
 *::-webkit-scrollbar {
     width: var(--scrollbar-width); 
 }
