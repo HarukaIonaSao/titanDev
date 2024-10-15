@@ -1,5 +1,4 @@
 .titans {
-  background-color: red;
   display: flex;
   gap: 30px;   
   padding: 30px 0;
@@ -62,9 +61,8 @@
 }
 
 .list .titan img {
-  border-radius: 10px; /* Adicione esta linha */
-  overflow: hidden;
-  width: 20%;
+  border-radius: 10px; 
+  width: 18%;
 }
 
 .list .titan {
@@ -78,7 +76,7 @@
   font-size: 13px;
   justify-content: space-between;
   margin-bottom: 10px;
-  min-height: 50px;
+  min-height: 45px;
   padding: 0 5px;
   transition: 0.20 ease-in-out;
 }
