@@ -23,24 +23,3 @@ main {
     justify-content: center;
     min-height: 100vh;
 }
-
-/* Responsividade para telas maiores */
-@media (min-width: 1200px) {
-    body {
-        background-size: contain;
-    }
-}
-
-/* Responsividade para telas menores, como celulares */
-@media (max-width: 750px) {
-    body {
-        background-size: cover; /* Ajusta o background para cobrir a tela */
-        font-size: 14px; /* Diminui o tamanho da fonte */
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 12px; /* Fonte ainda menor para telas muito pequenas */
-    }
-}

@@ -117,10 +117,10 @@ const titans = [
           <p><em>Portador(es):</em><strong> ${titan.portador}</strong></p>
           <p>${titan.habilidades}</p>
         </div>
+        </div>
         <div class="saiba-mais"> 
           <a href="${titan.linkVideo}" target="_blank">Saiba Mais</a> 
         </div>
-      </div>
     `;
     return cardDiv;
   }

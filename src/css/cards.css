@@ -1,4 +1,5 @@
 .titans {
+  background-color: red;
   display: flex;
   gap: 30px;   
   padding: 30px 0;
@@ -14,8 +15,8 @@
   display: none;   
   flex-direction: column;
   justify-content: center;
-  max-width: 300px;
-  min-height: 500px;
+  width: 300px;
+  height: 500px;
   padding: 20px;
 }
 
@@ -24,26 +25,88 @@
   display: block;
 }
 
-.card-titan img {
+.card-titan img {  
   border-radius: 8px;
   box-shadow: 15px 15px 5px -15px var(--cor-font);
+  display: block;
   height: 200px;
+  margin: 10px auto; 
   margin-top: 10px;
   width: 200px;
 }
 
+.card-titan .tipo{
+  align-items: center;
+  display: flex;
+  margin: 10px auto; 
+  justify-content: center;
+  padding: 10px;
+}
+
 .card-titan .detalhes {
-  font-size: 14px; /* Tamanho maior para tela padrão */
+  font-size: 14px;
+  text-align: center;
 }
 
-@media (max-width: 750px) {
-  .card-titan .detalhes {
-    font-size: 12px; /* Diminui para mobile */
-  }
+.card-titan .descricao{
+  height:100px;
+  max-height: 150px;
+  overflow-y: auto;
+  padding:  0 10px;
+  text-align: center;
 }
 
-@media (max-width: 480px) {
-  .card-titan .detalhes {
-    font-size: 10px; /* Fonte ainda menor para telas pequenas */
-  }
+/* Menu */
+.list {
+  max-width: 200px;  
+}
+
+.list .titan img {
+  border-radius: 10px; /* Adicione esta linha */
+  overflow: hidden;
+  width: 20%;
+}
+
+.list .titan {
+  align-items: center;
+  background-color: var(--cor-btn);
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  color: var(--cor-font);
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  min-height: 50px;
+  padding: 0 5px;
+  transition: 0.20 ease-in-out;
+}
+
+.list .titan:hover {
+  background-color: var(--cor-btn-hover);
+  transform: scale(1.05);
+}
+
+.list .titan span {
+  padding-right: 20px;
+}
+
+/* Botão */
+.saiba-mais {
+  height: 30px;
+  margin-top: 30px;
+  text-align: center; 
+}
+
+.saiba-mais a { 
+  background-color: var(--cor-btn); 
+  border-radius: 5px; 
+  color: var(--cor-font);
+  padding: 10px 20px; 
+  text-decoration: none; 
+}
+
+.saiba-mais a:hover {
+  background-color: var(--cor-btn-hover); 
 }
